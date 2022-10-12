@@ -25,8 +25,9 @@ public:
 		//两点之间距离的平方
 		const double dx = this->x - point.x;
 		const double dy = this->y - point.y;
-		const double dz = this->z - point.z;
-		return dx * dx + dy * dy + dz * dz;
+		//const double dz = this->z - point.z;
+		//return dx * dx + dy * dy + dz * dz;
+		return dx * dx + dy * dy;
 	}
 
 	double Distance(const Point& point)const {

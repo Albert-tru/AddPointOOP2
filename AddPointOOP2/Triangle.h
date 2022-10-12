@@ -39,6 +39,9 @@ struct Triangle {
 
 	Triangle& operator=(const Triangle&) = default;
 	Triangle& operator=(Triangle&&) = default;
+	bool operator==(Triangle t) {
+		return t.a == a && t.b == b;
+	}
 
 };
 
